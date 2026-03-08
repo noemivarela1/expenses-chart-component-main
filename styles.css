@@ -84,7 +84,9 @@ main>header {
     color:white;
     padding:15px;
 }
-
+h1{
+    font-size:1.5em;
+}
 main>article {
     border-radius:10px;
     background-color:white;
