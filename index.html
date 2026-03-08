@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div>
+        <p>My balance</p>
+        <p><strong>$921.48</strong></p>
+      </div>
+      <img src="images/logo.svg" alt="logo">
+    </header>
+    <article>
+      <header>
+        <p><strong>Spending - Last 7 days</strong></p>
+      </header>
+      <div id="grafico" class="grafico-wrapper">
+        <!-- Las barras se generarán aquí -->
+      </div>
+     
+      <hr>
+      <footer>
+        <div id="left">
+          <p>Total this month</p>
+          <p><strong>$478.33</strong></p>
+        </div>
+        <div id="right">
+          <p><strong>+2.4%</strong></p>
+          <p>from last month</p>
+        </div>
+      </footer>
+    </article>
+  </main>
+
+<!--
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Noemí Varela Rodríguez</a>.
+  </footer>
+-->
+  <script>
+    cargarGrafico();
+  </script>
+</body>
+
+</html>

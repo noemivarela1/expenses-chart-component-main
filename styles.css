@@ -1,0 +1,132 @@
+.grafico-wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    height: 150px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    
+   
+  }
+  .barra {
+    position:relative;
+    flex: 1; /* Todas las barras tienen el mismo ancho */
+    background-color:hsl(10, 79%, 65%);
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 4px 4px 0 0;
+    font-size:smaller;
+  }
+  .barra.maxima {
+    background-color:hsl(186, 34%, 65%); 
+  }
+  
+  .barra span {
+    position: absolute;
+    top: -45px; /* Colócao fóra, arriba da barra */
+    left:50%;
+    transform: translateX(-50%);
+    color:white;
+    background-color:hsl(25, 47%, 15%);
+    padding:10px;
+    border-radius:5px;
+    opacity: 0;
+  }
+
+  .barra:hover {
+    filter: saturate(0.65) brightness(1.2);
+  }
+  .barra:hover span {
+    opacity: 1;
+  }
+  .etiqueta {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    color: #333;
+  }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+html{
+    height:100%;
+}
+
+body {
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    background-color: hsl(26, 66%, 93%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+
+main {
+    width: 450px;
+
+}
+
+main>header {
+    border-radius: 10px;
+    background-color: hsl(10, 79%, 65%);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color:white;
+    padding:15px;
+}
+
+main>article {
+    border-radius:10px;
+    background-color:white;
+    padding:20px;
+    color:hsl(25, 47%, 15%);
+}
+article>header>p{
+    text-align:left;
+    font-size:x-large;
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+    margin-top:15px;
+   
+}
+#left{
+    align-self: start;
+}
+#left>p{
+    margin:0;
+}
+#left>p>strong{
+    font-size:xx-large;
+}
+#right{
+    align-self:end;
+    margin:1em;
+}
+#right>p{
+    text-align:right;
+    margin:0;
+}
+hr { 
+    margin-top:20px;
+    height: 2px; 
+    background-color:hsl(26, 66%, 93%);
+    border: none; 
+} 
+
+@media (min-width: 375px) and (max-width: 499px) {
+    main {
+      width: 350px;
+    }
+}
