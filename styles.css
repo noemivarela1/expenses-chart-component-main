@@ -34,10 +34,10 @@
     opacity: 0;
   }
 
-  .barra:hover {
+  .barra:hover,.barra:focus  {
     filter: saturate(0.65) brightness(1.2);
   }
-  .barra:hover span {
+  .barra:hover span, .barra:focus span {
     opacity: 1;
   }
   .etiqueta {

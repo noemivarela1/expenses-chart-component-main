@@ -10,7 +10,7 @@ async function cargarGrafico() {
 
         // 2. Calcular el valor máximo para que sea proporcional
         const maximo = Math.max(...datos.map(d => d.amount));
-
+        let index=0;
         // 3. Crear los divs dinámicamente
         datos.forEach(item => {
             const barra = document.createElement('div');
@@ -21,7 +21,8 @@ async function cargarGrafico() {
             // Altura relativa al valor máximo
             const altura = (item.amount / maximo) * 100;
             barra.style.height = `${altura}%`;
-
+            barra.setAttribute('tabindex', index);
+            
             barra.innerHTML = `
             <span>$${item.amount}</span>
               <div class="etiqueta">${item.day}</div>
